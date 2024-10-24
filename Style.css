@@ -16,9 +16,17 @@ body{
     justify-content: center;
     align-items: center;
 }
-.navbar-sidebar {
+
+.navbar-sidebar  {
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center ;
+    justify-content: center;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
 }
