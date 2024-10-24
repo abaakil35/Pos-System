@@ -1,0 +1,24 @@
+body{
+    display: flex; 
+}
+.cercle div {
+    width: 50px;
+    height: 50px;
+    background-color:#965E47  ;
+    border-radius: 50%;
+}
+.left-sidebar{
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center ;
+}
