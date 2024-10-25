@@ -9,6 +9,7 @@ body{
     border-radius: 50%;
 }
 .left-sidebar{
+    padding-top: 5px;
     font-family: Figtree;
     position: sticky;
     top: 0;
@@ -53,15 +54,53 @@ body{
 .deconnetion{
     display: flex;
     width: 110px;
-    padding: 30px 15px;
+    padding: 20px 10px;
     flex-direction: column;
     align-items: center;
     gap: 55px;
-    
+    margin-top: 45px;
 }
 .left-sidebar, .deconnetion{
     gap: 50px;
 }
-.left-sidebar, .navbar-sidebar{
-    gap: 15px;
+
+
+.nav-title{
+    color: #000;
+    font-family: Figtree;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
+.nav-button{
+    display: inline-block;
+    padding: 14px 16px;
+    font-family: Figtree;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border-radius: 40px;
+    border: none;
+    background: #fff;
+    cursor: pointer;
+    color: #000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.button-nav button:hover{
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+.content{
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 21px;
+    flex: 1 0 0;
+    align-self: stretch;
+    }
