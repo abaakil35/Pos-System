@@ -202,10 +202,10 @@ h5 {
     color: #000;
     font-family: Figtree;
     font-size: 24px;
-    font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin-top : 10px  ;
+    margin: 10px ;
+    
 }
 .button-color{
     display: flex;
@@ -217,6 +217,12 @@ h5 {
     box-sizing: border-box;
     border-radius: 40px;
     background: #F2F2F2;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+
+}
+.button-color:hover{
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
 }
 .button-color p {
     color: #000;
@@ -268,4 +274,10 @@ h5 {
     align-self: stretch;
     flex-shrink: 0;
     position: relative;
+}
+.line-1{
+    width: 246px;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.20);
+
 }
