@@ -110,7 +110,7 @@ body{
     flex-direction: column;
     align-items: flex-start;
     gap: 21px;
-    flex: 1 0 0;
+    flex: 1;
     align-self: stretch;
     }
 .title-content{
@@ -126,21 +126,84 @@ body{
     padding: 24px;
     flex-direction: column;
     align-items: flex-start;
-    gap: 20px;
+    gap: 10px;
     align-self: stretch;
     background: #fff;
+    height: max-content;
+    border-radius: 16px;
+    width: 400px;
+    padding: 15px;
 }
 .container-item img{
+    border-radius: 16px;
     width: 90px;
     height: 90px;
-    border-radius: 16px;    
+    position: relative;
+    object-fit: cover;   
 
 }
-.Part1{
+.pic-item ,.container-item{
+    padding-top: 15px;
+}
+.Part1 ,img {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    gap: 16px;
     align-items: flex-start;
-    gap: 6px;
-    flex: 1 0 0;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    
+
+}
+.pantalon{
+    color: #000000;
+    text-align: left;
+    font-family: "Figtree-Regular", sans-serif;
+    font-size: 14px;
+    line-height: 130%;
+    font-weight: 400;
+    opacity: 0.4;
+    position: relative;
+    align-self: stretch;
+
+}
+.sous-titre-item{
+    color: #000000;
+    text-align: left;
+    font-family: "Figtree-Regular", sans-serif;
+    font-size: 18px;
+    line-height: 120%;
+    font-weight: 400;
+    position: relative;
+    align-self: stretch;
+}
+.price * {
+    box-sizing: border-box;
+    color: #000;
+    font-family: Figtree;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    position: relative;
+    display: flex;
+}
+.price span{
+    color: #000;
+    font-family: Figtree;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.title-color{
+    color: #000;
+    font-family: Figtree;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top : 10px  ;
 }
