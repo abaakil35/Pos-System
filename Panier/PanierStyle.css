@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    font-family: 'Figtree', sans-serif;
+}
+.panier-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+}
 :root {
     --brown: #965E47;
     --white: #FFFFFF;
@@ -12,6 +23,7 @@
     flex-direction: column;
     align-items: center;
     height: 100vh;
+    box-sizing: border-box;
 }
 
 .cart-items {
@@ -174,7 +186,9 @@ h3, p {
     border-radius: 16px;
     font-size: 16px;
     cursor: pointer;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
+
 
 .option-card {
     width: 100px;
@@ -184,8 +198,38 @@ h3, p {
     box-shadow: 0px 10px 20px var(--shadow);
     border-radius: 16px;
     margin: 5px;
+   
 }
+.option-card-valider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 20px;
+    color: #965E47;
+    border: none;
+    border-radius: 16px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.cart-item img {
+    width: 70px;
+    height: 70px;
+    border-radius: 16px;
+    padding-right: 5px;
+}
+.option-card-valider:hover{
+    background-color: #965E47;
+    color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    cursor: pointer;
 
-.option-confirm {
-    width: 100px;
+}
+.option-card:hover{
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    cursor: pointer;
+    background-color: #965E47;
+    color:#FFFFFF ;
 }
