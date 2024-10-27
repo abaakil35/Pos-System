@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" reel="stylesheet"/>
+    <title>Panier</title>
+</head>
+<body>
+    <div class="cart-container" id="cart-content">
+        <div class="cart-items">
+    
+            <div class="cart-header">
+                <h2 class="cart-title">Panier</h2>
+    
+                <div class="cart-item">
+                    <div class="item-img">
+                        <img class="item-image" src="pic-item.png" alt="Pantalon en Jean Léger" />
+                    </div>
+                    <div class="item-details">
+                        <h3 class="item-name">Pantalon en Jean Léger</h3>
+                        <div class="item-controls">
+                            <div class="item-quantity">
+                                <button class="btn-decrement">-</button>
+                                <span class="quantity">1</span>
+                                <button class="btn-increment">+</button>
+                            </div>
+                            <div class="item-price">
+                                <span>359.00 DH</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="cart-total">
+                    <p class="total-label">Total</p>
+                    <span class="old-price">1097.00 DH</span>
+                    <span class="final-price">977.00 DH</span>
+                </div>
+            </div>
+    
+            <div class="payment-section">
+                <div class="payment-inputs">
+                    <form>
+                        <div class="payment-field">
+                            <input type="text" class="input-field" value="1000.00" id="cash-input" />
+                            <label for="cash-input">Espèces</label>
+                        </div>
+                        <div class="payment-field">
+                            <input type="text" class="input-field" value="100.00" id="discount-input" />
+                            <label for="discount-input">Réduction</label>
+                        </div>
+                    </form>
+                </div>
+    
+                <div class="payment-options">
+                    <button class="option-card">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="..."/></svg>
+                        <span>Carte</span>
+                    </button>
+                    <button class="option-card">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="..."/></svg>
+                        <span>Carte</span>
+                    </button>
+                    <button class="option-confirm">
+                        <span>Valider</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
