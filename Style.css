@@ -105,6 +105,7 @@ body{
 .button-nav button:hover{
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     transform: scale(1.05);
+    cursor: pointer;
 }
 .content{
     display: flex;
@@ -229,6 +230,7 @@ h5 {
 .button-color:hover{
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     transform: scale(1.05);
+    cursor: pointer;
 }
 .button-color p {
     color: #000;
@@ -334,6 +336,7 @@ h5 {
 .taille:hover{
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     transform: scale(1.05);
+    cursor: pointer;
 }
 .containers{
     display: grid;
@@ -341,4 +344,9 @@ h5 {
     gap: 15px;
     box-sizing: border-box;
     position: relative;
+    
+}
+.button-panier:hover{
+    background-color: #827757; 
+    cursor: pointer; 
 }
