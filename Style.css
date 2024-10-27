@@ -140,6 +140,8 @@ body{
     border-radius: 16px;
     width: 400px;
     padding: 25px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+
 }
 .container-item img{
     border-radius: 16px;
@@ -349,4 +351,9 @@ h5 {
 .button-panier:hover{
     background-color: #827757; 
     cursor: pointer; 
+}
+.container-item:hover{
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+
 }
