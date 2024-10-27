@@ -233,3 +233,19 @@ h3, p {
     background-color: #965E47;
     color:#FFFFFF ;
 }
+#panierSidebar {
+    position: fixed;
+    right: -250px; 
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #f8f8f8;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+    transition: right 0.3s ease;
+    padding: 20px;
+}
+
+
+#panierSidebar.active {
+    right: 0;
+}
