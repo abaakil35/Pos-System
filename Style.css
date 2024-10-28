@@ -131,7 +131,8 @@ body{
     line-height: normal;
     }
 .container-item{
-    display: flex;
+
+    display: inline-block;
     padding: 24px;
     flex-direction: column;
     align-items: flex-start;
@@ -140,7 +141,9 @@ body{
     background: #fff;
     height: max-content;
     border-radius: 16px;
-    width: 400px;
+    width: 300px;
+    max-width: 300px;
+    margin-bottom: 10px;
     padding: 25px;
     transition: box-shadow 0.3s ease, transform 0.3s ease;
 
@@ -343,11 +346,11 @@ h5 {
     cursor: pointer;
 }
 .containers{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-    box-sizing: border-box;
+    column-count: 3;
+    column-gap: 10px;
+    width: 100%; ;
     position: relative;
+    padding: 5px;
     
 }
 .button-panier:hover{
@@ -605,28 +608,18 @@ h3, p {
     z-index: 10;
     transition: right 0.3s ease;
 }
-#overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 5; 
-}
 
-#panierSidebar.active {
-    right: 0;
-}
-body.blur {
-    filter: blur(5px);
-}
+@media (max-width: 1200px) {
+    .content {
 
-#panierSidebar.visible {
-    right: 0;
+    column-count: 2;
+    
+    }
+  }
+  
+@media (max-width: 512px) {
+    .content {
+    column-count: 1;
+    }
 }
-
-#overlay.visible {
-    display: block;
-}
+  
