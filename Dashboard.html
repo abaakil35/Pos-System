@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="Style.css" />
     <title>Pos System</title>
   </head>
-  <body>
+  <body id="body">
     <section class="left-sidebar">
       <div class="cercle">
         <div></div>
@@ -70,30 +70,13 @@
 
         <a
           class="navbar-sidebar"
-          id="#openPanierButton"
-          href="#"
-          onclick="showSidebar()"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-          >
-            <path
-              d="M16 14C16 14.8284 16.6716 15.5 17.5 15.5C18.3284 15.5 19 14.8284 19 14C19 13.1716 18.3284 12.5 17.5 12.5C16.6716 12.5 16 13.1716 16 14Z"
-              stroke="black"
-              stroke-width="1.5"
-            />
-            <path
-              d="M10 7H16C18.8284 7 20.2426 7 21.1213 7.87868C22 8.75736 22 10.1716 22 13V15C22 17.8284 22 19.2426 21.1213 20.1213C20.2426 21 18.8284 21 16 21H10C6.22876 21 4.34315 21 3.17157 19.8284C2 18.6569 2 16.7712 2 13V11C2 7.22876 2 5.34315 3.17157 4.17157C4.34315 3 6.22876 3 10 3H14C14.93 3 15.395 3 15.7765 3.10222C16.8117 3.37962 17.6204 4.18827 17.8978 5.22354C18 5.60504 18 6.07003 18 7"
-              stroke="black"
-              stroke-width="1.5"
-              stroke-linecap="round"
-            />
+          id="panies">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18" fill="none">
+            <path d="M10.8333 16.5H9.11041C6.81801 16.5 5.67183 16.5 4.87633 15.8668C3.79209 14.9952 3.71781 13.2271 3.50054 11.9898L3.00672 9.17782C2.91813 8.67341 2.5806 8.23966 2.09867 8.01099C1.98246 7.95582 1.89959 7.85291 1.87411 7.73199C1.73228 7.05895 1.35533 6.12241 2.19843 5.75069C2.38903 5.66666 2.64934 5.66666 3.16997 5.66666H6.24999M9.58333 5.66666H16.83C17.3507 5.66666 17.611 5.66666 17.8016 5.75069C18.6447 6.12241 18.2677 7.05895 18.1259 7.73199C18.1004 7.85291 18.0175 7.95582 17.9013 8.01099C17.6242 8.14249 17.3948 8.34182 17.2331 8.58332" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M12.5 13.5833H18.3333M15.4167 16.5V10.6667" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M5.41666 8.16667L8.33332 1.5M12.5 1.5L14.5833 5.66667" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
           </svg>
-          <p>Caisse</p>
+          <p>Panier</p>
         </a>
         <a class="navbar-sidebar" href="#">
           <svg
@@ -149,6 +132,7 @@
       <div class="content-top">
         <div class="nav-title">
           <h2>Catégories</h2>
+          
         </div>
         <div class="button-nav">
           <button class="nav-button">Tous</button>
@@ -443,7 +427,10 @@
         <div class="cart-container" id="cart-content">
           <div class="cart-items">
             <div class="cart-header">
-              <h2 class="cart-title">Panier</h2>
+              <div class="top">
+                <h2 class="cart-title">Panier</h2>
+                <h3 class="cart-title">Close</h3>
+              </div>
 
               <div class="cart-item">
                 <div class="item-img">
@@ -579,8 +566,9 @@
           </div>
         </div>
       </div>
-      <div id="overlay"></div>
     </aside> -->
     <script src="Script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </body>
 </html>
